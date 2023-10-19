@@ -1,0 +1,47 @@
+body{
+    background-image: url(../img/fundo2.png);
+    position: relative;
+    text-align: center;
+    width: 1000px;
+    margin: auto;
+  
+}
+
+body.home{
+    background-image: url(../img/fundo.png);
+    position: relative;
+    text-align: center;
+    width: 1000px;
+    margin: auto;
+  
+}
+
+body .text{
+    position: relative;
+    text-align: left;
+}
+
+header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.banner{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 413px;
+    width: 1000px;
+    margin-top: 27px;
+    position: relative;
+    
+}
+
+form{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: start;
+}
+
