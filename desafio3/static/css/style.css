@@ -1,0 +1,12 @@
+header.masthead {
+    background: url(../img/banner1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 800px;
+}
+
+.bg-primary{
+    background-color: red;
+}
