@@ -1,12 +1,19 @@
 header.masthead {
-    background: url(../img/banner1.jpg);
+    background: url(../img/banner3.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: cover;
     height: 800px;
 }
 
-.bg-primary{
-    background-color: red;
+body{
+    background-image: url(../img/banner2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
+
+
+

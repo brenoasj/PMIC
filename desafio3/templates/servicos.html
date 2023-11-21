@@ -1,36 +1,53 @@
-<section class="page-section" id="services">
-    <div class="container px-4 px-lg-5">
-        <h2 class="text-center mt-0">At Your Service</h2>
-        <hr class="divider" />
-        <div class="row gx-4 gx-lg-5">
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="mt-5">
-                    <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
-                    <h3 class="h4 mb-2">Sturdy Themes</h3>
-                    <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="mt-5">
-                    <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
-                    <h3 class="h4 mb-2">Up to Date</h3>
-                    <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="mt-5">
-                    <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
-                    <h3 class="h4 mb-2">Ready to Publish</h3>
-                    <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="mt-5">
-                    <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
-                    <h3 class="h4 mb-2">Made with Love</h3>
-                    <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
-                </div>
-            </div>
+{% extends "base.html" %}
+{% block title %}Serviços{% endblock %}
+{% block content %}
+<div class="container mt-3">
+    <div class="card mb-3">
+        <img class="card-img-top" src="../static/img/kids.jpg" alt="Imagem de capa do card">
+        <div class="card-body">
+            <h5 class="card-title">Para a criançada e adolescentes</h5>
+            <p class="card-text">O melhor momento de aprendizado é quando somos crianças, enquanto criamos amizades
+                durante a fase da adolescência. Traga seu(ua) filho(a) para desenvolver não só habilidades no basquete,
+                mas também para construir conduta e boas noções sociais. </p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-warning">Segundas e Quartas</li>
+                <li class="list-group-item">5 a 10 anos - 18h às 19h30</li>
+                <li class="list-group-item">11 a 13 anos - 18h às 19h30</li>
+                <li class="list-group-item">14 e 15 anos - 19h às 20h30</li>
+                <li class="list-group-item">16 e 17 anos - 19h às 20h30</li>
+            </ul>
         </div>
     </div>
-</section>
+    <div class="card mb-3">
+        <img class="card-img-top" src="../static/img/teens.jpg" alt="Imagem de capa do card">
+        <div class="card-body">
+            <h5 class="card-title">Para jovens adultos</h5>
+            <p class="card-text">Querer aprender nunca é tarde e se aprimorar sempre é importante. Então temos um
+                momento reservado para os novos aspirantes a vida de hooper, aos que tem uma base mas pretendem
+                melhorá-la e aos mais experientes que não querem ficar estagnados. </p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-warning">Terças e Quintas (18 a 27 anos)</li>
+                <li class="list-group-item">Iniciante - 18h às 19h30</li>
+                <li class="list-group-item">Intermediário - 18h às 19h30</li>
+                <li class="list-group-item">Avançado - 19h às 20h30</li>
+            </ul>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <img class="card-img-top" src="../static/img/banner1.jpg" alt="Imagem de capa do card">
+        <div class="card-body">
+            <h5 class="card-title">Eventos</h5>
+            <p class="card-text">Outra abordagem que utilizamos para que você se conectar ao máximo com a cultura do
+                basquete são os eventos promovidos todo mês.</p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-warning">Fique ligado nas nossas redes sociais</li>
+                <li class="list-group-item">Torneios 3x3</li>
+                <li class="list-group-item">Torneios 5x5</li>
+                <li class="list-group-item">Eventos de exibição</li>
+                <li class="list-group-item">Workshops</li>
+                <li class="list-group-item">Encontros com autoridades no ramo</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
