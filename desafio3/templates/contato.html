@@ -12,35 +12,36 @@
         </div>
         <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
             <div class="col-lg-6">
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <form id="contactForm" action="/contato" method="post" data-sb-form-api-token="API_TOKEN">
                     <div class="form-floating mb-3">
-                        <input class="form-control" id="name" type="text" placeholder="Digite seu nome..."
+                        <input class="form-control" id="name" type="text" name="nome" placeholder="Digite seu nome..."
                             data-sb-validations="required" />
                         <label for="name">Nome e sobrenome</label>
                         <div class="invalid-feedback" data-sb-feedback="name:required">Nome necessário.</div>
                     </div>
                     <div class="form-floating mb-3">
-                        <input class="form-control" id="email" type="email" placeholder="nome@exemplo.com"
+                        <input class="form-control" id="email" type="email" name="email" placeholder="nome@exemplo.com"
                             data-sb-validations="required,email" />
                         <label for="email">Email</label>
                         <div class="invalid-feedback" data-sb-feedback="email:required">Email necessário.</div>
                         <div class="invalid-feedback" data-sb-feedback="email:email">Esse email não é válido.</div>
                     </div>
                     <div class="form-floating mb-3">
-                        <input class="form-control" id="phone" type="tel" placeholder="(DD) XXXX-XXXX"
+                        <input class="form-control" id="phone" type="tel" name="tel" placeholder="(DD) XXXX-XXXX"
                             data-sb-validations="required" />
                         <label for="phone">Número do celular</label>
                         <div class="invalid-feedback" data-sb-feedback="phone:required">Número de celular necessário.
                         </div>
                     </div>
                     <div class="form-floating mb-3">
-                        <textarea class="form-control" id="message" type="text" placeholder="Digite sua mensagem aqui..."
+                        <textarea class="form-control" id="message" type="text" name="mensagem" placeholder="Digite sua mensagem aqui..."
                             style="height: 10rem" data-sb-validations="required"></textarea>
                         <label for="message">Mensagem</label>
                         <div class="invalid-feedback" data-sb-feedback="message:required">Mensagem necessária.
                         </div>
                     </div>
-                    <button class="btn btn-warning" id="submitButton"type="submit">Enviar</button>
+                    <button value="Enviar" class="btn btn-warning" id="submitButton" type="submit">Enviar</button>
+                    <p>{{ status }}</p>
                 </form>
             </div>
         </div>
